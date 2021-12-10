@@ -39,7 +39,62 @@ document.write(unescape('%3c%73%74%79%6c%65%3e%69%6d%67%5b%61%6c%74%3d%22%77%77%
     margin: 0px 0px 0;
 } 
     .paddings{
-    padding:0px 10px 0px;	
+    padding:0px 10px 10px;	
+}
+.overlayzz {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlayzz:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupzz {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  top:20%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popupzz {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popupzz .closezz {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popupzz .closezz:hover {
+  color: #06D85F;
+}
+.popupzz .contentzz {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 480px){
+  .popup{
+    width: 90%;
+  }
 }
 </style>
 </head>
@@ -320,7 +375,8 @@ document.write(unescape('%3c%73%74%79%6c%65%3e%69%6d%67%5b%61%6c%74%3d%22%77%77%
               <h4 class="text-secondary">CyberStudy</h4>
               <ul>
 			  <p>Dapatkan sekarang secara Gratis!</p>
-			  <a href="#" class="btn btn-buy btn-lg bg-primary">Download</a>
+			  <a href="#" class="btn btn-buy btn-lg bg-primary paddings">Download</a>
+		      <a class="btn btn-buy btn-lg bg-warning paddings" href="#popup1zz">Info</a>
               </ul>
               <div class="btn-wrap">
 			  <figcaption class="blockquote-footer"><cite title="Source Title">17,2mb</cite>
@@ -332,7 +388,22 @@ document.write(unescape('%3c%73%74%79%6c%65%3e%69%6d%67%5b%61%6c%74%3d%22%77%77%
 </div>
 		
       </div>
-    </section><!-- End Pricing Section -->
+    </section>
+<div id="popup1zz" class="overlayzz">
+	<div class="popupzz">
+		<h2>Info CyberStudy</h2>
+		<a class="closezz" href="#closezz">&times;</a>
+		<div class="contentzz"><p>
+App Developer : AW<br/>
+Web Developer : Nathan Prinsley<br/>
+Design        : Ario Muhammad</br>
+Security      : Akhmad Pahlevy</p>
+<p>Aplikasi ini masih dalam tahap pengembangan, belum sepenuhnya bisa di akses dengan baik.
+Jika anda menemukan masalah error/bug atau semacamnya pada aplikasi ini, silahkan hubungi kami.
+<br/><br/>Terima Kasih.<br/>
+~ Tim Cyber Study
+</p></div></div></div>
+<!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
 	<!--
