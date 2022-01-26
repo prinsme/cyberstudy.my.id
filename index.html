@@ -325,7 +325,7 @@
               <ul>
 			  <p>Terakhir Update : <b>20 Jan 2022</b><br/>Versi : <b>1.3</b><br/>Ukuran : <b>11,6mb</b></p>
 			  <a target="_blank" download="1" href="https://cyberstudy.my.id/appfile/CyberStudy(v1.3).apk" class="btn btn-buy btn-lg bg-primary paddings">Download</a>
-		      <a class="btn btn-buy btn-lg bg-warning paddings scrollto" href="#index.php?view=10">New</a>
+		      <a class="btn btn-buy btn-lg bg-warning paddings" href="#index.php?view=10">New</a>
               </ul>
               <div class="btn-wrap">
 			  <figcaption class="blockquote-footer"><cite title="Source Title">From Zero To Hero</cite>
@@ -580,7 +580,7 @@
 	    <div id="index.php?view=10" class="overlayzz">
 	<div class="popupzz">
 		<h2>Update Materi</h2>
-		<a class="closezz scrollto" href="#index.php?id=1">&times;</a>
+		<a class="closezz" href="#index.php?id=1">&times;</a>
 		<div class="contentzz">
 			<p>- Panduan PDF <b>(+24)</b><br/>- Perangkat Keras <b>(+3)</b><br/>- Jaringan Internet <b>(+3)</b><br/>- Keamanan Siber <b>(New)</b><br/>- Pemrograman <b>(New)</b></p>
 </div></div></div>
@@ -595,7 +595,14 @@
   <!-- Template Main JS File -->
   <script src="./js/main.js"></script>
 
-  <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+<script>
+if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); }
+$('a[href="#"]').click(function(event){
+
+    event.preventDefault();
+
+});
+</script>
 </body>
 
 </html>
